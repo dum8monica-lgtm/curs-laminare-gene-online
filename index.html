@@ -1,1 +1,634 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Învață laminarea și vopsirea genelor online. Curs complet cu certificat, suport direct de la mine și acces pe viață. Începe astăzi, lucrează mâine!">
+    <title>Curs Laminare Gene Online - Certificat & Acces Nelimitat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5fa;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2a4a70 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .price-tag {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            padding: 15px 30px;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .price-tag strong {
+            font-size: 1.4em;
+            color: #fff;
+        }
+
+        .discount {
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 20px;
+        }
+
+        section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1e3a5f;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #f8d3d6;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .feature-card ul {
+            list-style: none;
+        }
+
+        .feature-card ul li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-card ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #30d5c8;
+            font-weight: bold;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2a4a70 100%);
+            color: white;
+        }
+
+        .benefits h2 {
+            color: white;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #30d5c8;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        /* Course Modules */
+        .modules-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .module {
+            background: #f8d3d6;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #30d5c8;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .module h3 {
+            color: #1e3a5f;
+            font-size: 1.3em;
+        }
+
+        /* Target Audience */
+        .target-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .target-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .target-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 15px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .faq-item h3 {
+            color: #1e3a5f;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .faq-item p {
+            color: #555;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2a4a70 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .features-grid, .target-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Curs Online Laminare și Vopsire Gene<br>Învață Tehnica Completă Pas cu Pas</h1>
+            <p>Curs laminare gene online cu certificat - Acces imediat și pe viață</p>
+            <img src="curs laminare gene md.jpg" alt="Curs Online Laminare Gene" style="max-width: 800px; width: 100%; border-radius: 20px; margin: 30px auto; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
+            <a href="https://linktr.ee/monica.laminare.gene" class="cta-button">ÎNCEPE ACUM</a>
+            <div class="price-tag">
+                <strong>99,99 RON</strong> - PREȚ PROMOȚIONAL
+                <span class="discount">OFERTĂ SPECIALĂ IANUARIE 2026</span>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.95em; opacity: 0.9;">Preț standard: 250 RON | Oferta valabilă pentru primele 10 cursante</p>
+        </div>
+    </section>
+
+    <!-- Ce vei învăța -->
+    <section>
+        <div class="container">
+            <h2>Ce Vei Învăța în Acest Curs de Laminare Gene</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Tehnici Complete</h3>
+                    <ul>
+                        <li>Pregătirea corectă a spațiului și materialelor pentru un mediu sigur și profesionist</li>
+                        <li>Pașii exacți ai procedurii de laminare, explicați detaliat</li>
+                        <li>Aplicarea și îndepărtarea soluțiilor fără a deteriora genele naturale</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Expertiza Practică</h3>
+                    <ul>
+                        <li>Tehnici corecte de vopsire a genelor, pentru un rezultat uniform și intens</li>
+                        <li>Hrănirea și protejarea genelor după procedură</li>
+                        <li>Greșeli frecvente și cum să le eviți</li>
+                        <li>Trucuri practice care fac diferența dintre un rezultat mediocru și unul WOW</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Video-uri HD</h3>
+                    <ul>
+                        <li>Toate lecțiile filmate în calitate HD</li>
+                        <li>Fiecare pas explicat clar și detaliat</li>
+                        <li>Exemple practice din salon real</li>
+                        <li>Învață laminare gene în ritmul tău</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ce este laminarea genelor -->
+    <section>
+        <div class="container">
+            <h2>Ce Este Laminarea Genelor?</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.2em; line-height: 1.8; margin-bottom: 20px;">
+                    Laminarea genelor este o procedură non-invazivă care ridică, curbează, hrănește și intensifică genele naturale, oferind un look natural, elegant și îngrijit, fără extensii.
+                </p>
+                <p style="font-size: 1.1em; line-height: 1.8; color: #555;">
+                    Este unul dintre cele mai cerute servicii din saloane, datorită rezultatelor vizibile și întreținerii minime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Despre mine -->
+    <section style="background: linear-gradient(135deg, #f8d3d6 0%, #fbe4e6 100%);">
+        <div class="container">
+            <h2>Despre Mine</h2>
+            <div style="max-width: 1000px; margin: 0 auto; background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <div style="display: grid; grid-template-columns: 300px 1fr; gap: 40px; align-items: center;">
+                    <img src="monica trainer.jpg" alt="Monica Dumbravă - Trainer Laminare Gene" style="width: 100%; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+                    <div>
+                        <h3 style="color: #1e3a5f; font-size: 1.8em; margin-bottom: 20px;">Monica Dumbravă</h3>
+                        <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 20px;">
+                            Cosmeticiană și stilist de gene de aproape 10 ani, trainer în laminarea genelor
+                        </p>
+                        <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">
+                            Am creat acest curs pentru a-ți oferi o bază solidă, corectă și sigură în laminarea și vopsirea genelor.
+                        </p>
+                        <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">
+                            Nu este doar teorie – este un ghid practic, explicat clar, pas cu pas, care te ajută să înțelegi ce faci, de ce faci și cum obții rezultate profesionale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @media (max-width: 768px) {
+            section[style*="background: linear-gradient(135deg, #f8d3d6"] div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Ce primești -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Ce Primești în Curs</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎥</div>
+                    <h3>Video-uri HD</h3>
+                    <p>Toate lecțiile filmate în detaliu</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Certificat Absolvire</h3>
+                    <p>Certificat oficial de absolvire</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💬</div>
+                    <h3>Suport Direct</h3>
+                    <p>Suport direct de la trainer</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📄</div>
+                    <h3>Ghid PDF</h3>
+                    <p>Ghid marketing descărcabil</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">♻️</div>
+                    <h3>Actualizări Gratuite</h3>
+                    <p>Pe viață, fără costuri extra</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Acces Nelimitat</h3>
+                    <p>Pe telefon, laptop, tabletă</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module curs -->
+    <section>
+        <div class="container">
+            <h2>Modulele Cursului de Laminare Gene</h2>
+            <div class="modules-list">
+                <div class="module">
+                    <h3>Modul 1: INTRODUCERE</h3>
+                    <p>Cum să parcurgi structurat cursul • Ce vei învăța în acest curs</p>
+                </div>
+                <div class="module">
+                    <h3>Modul 2: Baza oricărei proceduri - teoria</h3>
+                    <p>Anatomia genelor și laminarea • Igiena</p>
+                </div>
+                <div class="module">
+                    <h3>Modul 3: PRACTICA</h3>
+                    <p>Curățarea Corectă a Genelor (Video HD) • Verificare Gene • PATCH - aplicare protecție ochi • Ridicarea genelor pe pad • Loțiuni - Cum le aplicăm • Vopsirea genelor și îndepărtarea vopselei</p>
+                </div>
+                <div class="module">
+                    <h3>Modul 4: Rezultat final</h3>
+                    <p>Îndepărtare eyepatches • Finalizarea procedurii</p>
+                </div>
+                <div class="module">
+                    <h3>PDF-uri descărcabile incluse:</h3>
+                    <p>✅ Laminarea genelor: Secrete și tipsuri pentru rezultat perfect<br>
+                    ✅ Checklist – Îngrijirea Post-Procedură<br>
+                    ✅ Checklist – Pregătirea Spațiului<br>
+                    ✅ Checklist – Procedura<br>
+                    ✅ Fișă de lucru – Laminare Gene<br>
+                    ✅ Instrucțiuni Post Laminare<br>
+                    ✅ Manual Laminare Gene<br>
+                    ✅ Mini Ghid de Marketing pentru Tehnicieni<br>
+                    ✅ Model politici salon</p>
+                </div>
+                <div class="module">
+                    <h3>🎁 BONUS: Bobina 15 Reels Lash Lift</h3>
+                    <p>Conținut gata pregătit pentru promovarea serviciilor tale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cui se adresează cursul -->
+    <section>
+        <div class="container">
+            <h2>Cui Se Adresează Cursul?</h2>
+            <div class="target-grid">
+                <div class="target-card">
+                    <h3>✓ Ești la început</h3>
+                    <p>Vrei să înveți laminarea genelor de la zero - nu e nevoie de experiență anterioară</p>
+                </div>
+                <div class="target-card">
+                    <h3>✓ Serviciu premium</h3>
+                    <p>Vrei să adaugi un serviciu premium în portofoliul tău de cosmetică</p>
+                </div>
+                <div class="target-card">
+                    <h3>✓ Calitate și siguranță</h3>
+                    <p>Îți dorești să oferi clientelor tale un rezultat sigur, natural și de calitate</p>
+                </div>
+                <div class="target-card">
+                    <h3>✓ Toate nivelurile</h3>
+                    <p>Cursul este gândit să fie ușor de parcurs pentru toate nivelurile de experiență</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ce vei putea face după curs -->
+    <section style="background: linear-gradient(135deg, #1e3a5f 0%, #2a4a70 100%); color: white;">
+        <div class="container">
+            <h2 style="color: white;">Ce Vei Putea Face După Curs</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                    <div style="text-align: center; padding: 20px;">
+                        <div style="font-size: 3em; margin-bottom: 15px; color: #30d5c8;">✓</div>
+                        <p style="font-size: 1.1em; line-height: 1.6;">Realiza procedura completă de laminare și vopsire a genelor</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <div style="font-size: 3em; margin-bottom: 15px; color: #30d5c8;">✓</div>
+                        <p style="font-size: 1.1em; line-height: 1.6;">Lucra cu încredere, știind exact fiecare pas</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <div style="font-size: 3em; margin-bottom: 15px; color: #30d5c8;">✓</div>
+                        <p style="font-size: 1.1em; line-height: 1.6;">Oferi clientelor recomandări corecte de îngrijire</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <div style="font-size: 3em; margin-bottom: 15px; color: #30d5c8;">✓</div>
+                        <p style="font-size: 1.1em; line-height: 1.6;">Ai baza necesară pentru a începe sau dezvolta o carieră în beauty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficiile tale -->
+    <section>
+        <div class="container">
+            <h2>Beneficiile Tale</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: #f8d3d6; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="display: grid; gap: 20px;">
+                        <div style="display: flex; align-items: start; gap: 15px;">
+                            <span style="color: #30d5c8; font-size: 1.5em; font-weight: bold;">✓</span>
+                            <p style="font-size: 1.1em; line-height: 1.6; margin: 0;">Un serviciu extrem de căutat și bine plătit</p>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 15px;">
+                            <span style="color: #30d5c8; font-size: 1.5em; font-weight: bold;">✓</span>
+                            <p style="font-size: 1.1em; line-height: 1.6; margin: 0;">Mai multă încredere în tine și în munca ta</p>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 15px;">
+                            <span style="color: #30d5c8; font-size: 1.5em; font-weight: bold;">✓</span>
+                            <p style="font-size: 1.1em; line-height: 1.6; margin: 0;">Program flexibil - înveți când vrei tu</p>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 15px;">
+                            <span style="color: #30d5c8; font-size: 1.5em; font-weight: bold;">✓</span>
+                            <p style="font-size: 1.1em; line-height: 1.6; margin: 0;">Posibilitatea de a-ți crește veniturile</p>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 15px;">
+                            <span style="color: #30d5c8; font-size: 1.5em; font-weight: bold;">✓</span>
+                            <p style="font-size: 1.1em; line-height: 1.6; margin: 0;">Cliente mulțumite care revin și te recomandă</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <h2>Întrebări Frecvente</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>Pot să încep fără experiență?</h3>
+                    <p>Da! Cursul este făcut special pentru începători. Training-ul de laminare gene acoperă totul de la zero.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Primesc certificat laminare gene?</h3>
+                    <p>Da, primești certificat oficial de absolvire la finalul cursului.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Cât timp am acces la curs?</h3>
+                    <p>Pe viață. Plătești o dată și accesezi mereu cursul beauty online.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Pot pune întrebări în timpul cursului?</h3>
+                    <p>Da, ai suport direct de la trainer pentru orice întrebare.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Ce echipament îmi trebuie?</h3>
+                    <p>Kit de laminare gene (îți recomand cu drag dacă ai nevoie).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Cât durează cursul?</h3>
+                    <p>Program flexibil - înveți în ritmul tău, când vrei tu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="inscriere">
+        <div class="container">
+            <h2>🎉 OFERTĂ SPECIALĂ – IANUARIE 2026 🎉</h2>
+            <div style="background: rgba(255,255,255,0.15); padding: 40px; border-radius: 20px; margin: 30px auto; max-width: 700px;">
+                <p style="font-size: 1.8em; margin-bottom: 10px; font-weight: bold;">PREȚ REDUS pentru un timp limitat!</p>
+                <p style="font-size: 1.3em; margin-bottom: 15px; text-decoration: line-through; opacity: 0.8;">Preț standard: 250 RON</p>
+                <p style="font-size: 2.5em; color: #30d5c8; font-weight: bold; margin-bottom: 20px;">PREȚ PROMO: 99,99 RON</p>
+                <p style="font-size: 1.2em; background: #e74c3c; display: inline-block; padding: 10px 25px; border-radius: 30px; margin-bottom: 20px;">
+                    ⏰ Oferta valabilă doar pentru primele 10 cursante care se înscriu în ianuarie 2026
+                </p>
+            </div>
+            <p style="font-size: 1.3em; margin-bottom: 20px; font-weight: 500;">Începe Acum și Stăpânește Tehnica de Laminare Gene!</p>
+            <p style="font-size: 1.1em; margin-bottom: 30px;">Curs complet de laminare și vopsire gene - cerut de toate salonele de beauty din România</p>
+            <p><strong>START IMEDIAT:</strong> Plătești → Primești acces instant → Începi să înveți în 2 minute</p>
+            <a href="https://linktr.ee/monica.laminare.gene" class="cta-button" style="font-size: 1.3em; padding: 20px 50px;">ÎNSCRIE-TE ACUM - 99,99 RON</a>
+            <p style="margin-top: 30px; font-size: 1.1em;">👉 Începi să lucrezi cu primele cliente în această săptămână!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.2em; margin-bottom: 15px;">
+                �Instagram: <a href="https://instagram.com/moica.laminare.gene" target="_blank" style="color: #30d5c8; text-decoration: none; font-weight: 500;">@moica.laminare.gene</a>
+            </p>
+            <p>&copy; 2025 Curs Laminare Gene Online. Toate drepturile rezervate.</p>
+            <p>Curs cosmetică online | Training laminare gene România</p>
+        </div>
+    </footer>
+
+</body>
+</html>
