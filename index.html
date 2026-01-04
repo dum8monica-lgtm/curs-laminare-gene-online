@@ -639,46 +639,6 @@
         </div>
     </section>
     
-<div style="max-width:600px; margin:auto; padding:20px; background:#f9f9f9; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
-  <h2 style="text-align:center;">Înscriere Laminare Gene</h2>
-
-  <form id="customForm">
-    <label>Nume:</label>
-    <input type="text" name="nume" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-    <label>Prenume:</label>
-    <input type="text" name="prenume" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-    <label>Telefon:</label>
-    <input type="text" name="telefon" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-    <label>Mesaj:</label>
-    <textarea name="mesaj" rows="4" style="width:100%; padding:8px; margin-bottom:10px;"></textarea>
-
-    <button type="submit" style="width:100%; padding:10px; background:#ff66b2; color:#fff; border:none; border-radius:5px; cursor:pointer;">Trimite</button>
-  </form>
-
-  <p id="successMsg" style="text-align:center; color:green; display:none; margin-top:10px;">Formular trimis cu succes!</p>
-</div>
-
-<script>
-const form = document.getElementById('customForm');
-form.addEventListener('submit', e => {
-  e.preventDefault(); // împiedică reload-ul paginii
-  const formData = new FormData(form);
-
-  fetch("https://script.google.com/macros/s/AKfycbyGrR6Gv24v6zWmL2Ztgx2B7DE3KzKIfyGwS6qAzdOTSKjVWy4zCALUBMwFBWgqSOrSpw/exec", {
-    method: "POST",
-    body: formData
-  })
-  .then(res => {
-    document.getElementById('successMsg').style.display = 'block';
-    form.reset();
-  })
-  .catch(err => alert("Eroare la trimitere!"));
-});
-</script>
-
 
    
   </iframe>
