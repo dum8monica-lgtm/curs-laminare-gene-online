@@ -822,3 +822,391 @@
 
 </body>
 </html>
+
+<!doctype html>
+<html lang="ro" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laminare Gene - Pachete Curs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .font-serif-display {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    
+    .font-lato {
+      font-family: 'Lato', Arial, sans-serif;
+    }
+    
+    .slide-container {
+      width: 100%;
+      max-width: 540px;
+      aspect-ratio: 1080 / 1350;
+      margin: 0 auto;
+    }
+    
+    .carousel-wrapper {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .slide {
+      min-width: 100%;
+      padding: 0 8px;
+    }
+    
+    .badge-popular {
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      animation: shimmer 2s infinite;
+    }
+    
+    @keyframes shimmer {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.85; }
+    }
+    
+    .nav-dot {
+      transition: all 0.3s ease;
+    }
+    
+    .nav-dot.active {
+      width: 24px;
+      border-radius: 8px;
+    }
+    
+    .card-shadow {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    
+    .btn-nav {
+      transition: all 0.2s ease;
+    }
+    
+    .btn-nav:hover {
+      transform: scale(1.1);
+    }
+    
+    .btn-nav:active {
+      transform: scale(0.95);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-lato" style="background-color: #F7F3F0;">
+  <div class="h-full w-full flex flex-col items-center justify-center p-4 overflow-auto"><!-- Carousel Container -->
+   <div class="w-full max-w-xl relative"><!-- Navigation Arrows --> <button id="prevBtn" class="btn-nav absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-20 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center opacity-0 pointer-events-none" style="color: #8B2635;">
+     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline>
+     </svg></button> <button id="nextBtn" class="btn-nav absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-20 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center" style="color: #8B2635;">
+     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline>
+     </svg></button> <!-- Slides Wrapper -->
+    <div class="overflow-hidden rounded-2xl">
+     <div id="carouselWrapper" class="carousel-wrapper"><!-- SLIDE 1: BAZĂ -->
+      <div class="slide">
+       <div class="slide-container rounded-2xl overflow-hidden card-shadow" style="background-color: #F7F3F0;"><!-- Header Bar -->
+        <div class="w-full flex flex-col items-center justify-center" style="background-color: #E8D5D0; padding: 4% 0;">
+         <h2 class="font-lato font-bold text-lg sm:text-xl" style="color: #3A3A3A;">Curs BAZĂ</h2>
+         <p class="font-lato text-xs sm:text-sm" style="color: rgba(58, 58, 58, 0.7);">Învață în ritmul tău</p>
+        </div><!-- Card Central -->
+        <div class="mx-auto bg-white rounded-xl card-shadow" style="width: 85%; margin-top: 5%; margin-bottom: 5%; padding: 6% 5%;"><!-- Title -->
+         <div class="text-center mb-4">
+          <h1 class="font-serif-display font-bold text-2xl sm:text-3xl" style="color: #8B2635;">Laminare GENE</h1>
+          <p class="font-serif-display text-base sm:text-lg" style="color: #3A3A3A;">Online Video</p>
+         </div><!-- Decorative Line -->
+         <div class="flex justify-center my-4">
+          <div class="w-24 h-0.5" style="background-color: #8B2635;"></div>
+         </div><!-- Benefits List -->
+         <div class="space-y-3 mt-5">
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Video HD Acces Nelimitat</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Curs complet: teorie + practică</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">PDF tehnici &amp; produse</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Învățare self-paced</span>
+          </div>
+         </div><!-- Warning Note -->
+         <div class="mt-5 flex items-center gap-2"><span>⚠️</span> <span class="font-lato italic text-xs" style="color: rgba(58, 58, 58, 0.5);">Fără suport mentorat</span>
+         </div>
+        </div><!-- Footer Price -->
+        <div class="w-full flex items-center justify-center" style="background-color: #8B2635; padding: 4% 0;"><span id="basePrice" class="font-serif-display font-bold text-3xl sm:text-4xl text-white">150 RON</span>
+        </div><!-- Handle -->
+        <div class="w-full text-right pr-4 pb-2 pt-2"><span id="handle1" class="font-lato text-xs" style="color: #3A3A3A;">@monica.laminaregene</span>
+        </div>
+       </div>
+      </div><!-- SLIDE 2: PROFESIONAL -->
+      <div class="slide">
+       <div class="slide-container rounded-2xl overflow-hidden card-shadow relative" style="background-color: #F7F3F0;"><!-- Popular Badge -->
+        <div class="absolute top-4 right-4 z-10 badge-popular px-3 py-1 rounded-full"><span class="font-lato font-bold text-xs text-white">⭐ CEL MAI POPULAR</span>
+        </div><!-- Header Bar -->
+        <div class="w-full flex flex-col items-center justify-center" style="background-color: #D4B5B0; padding: 4% 0;">
+         <h2 class="font-lato font-bold text-lg sm:text-xl" style="color: #3A3A3A;">Curs PROFESIONAL</h2>
+         <p class="font-lato text-xs sm:text-sm" style="color: rgba(58, 58, 58, 0.7);">Suport complet inclus</p>
+        </div><!-- Card Central -->
+        <div class="mx-auto bg-white rounded-xl card-shadow" style="width: 85%; margin-top: 5%; margin-bottom: 5%; padding: 6% 5%;"><!-- Title -->
+         <div class="text-center mb-4">
+          <h1 class="font-serif-display font-bold text-2xl sm:text-3xl" style="color: #8B2635;">Laminare GENE</h1>
+          <p class="font-serif-display text-base sm:text-lg" style="color: #3A3A3A;">Online + Mentorat</p>
+         </div><!-- Decorative Line -->
+         <div class="flex justify-center my-4">
+          <div class="w-24 h-0.5" style="background-color: #8B2635;"></div>
+         </div><!-- Benefits List -->
+         <div class="space-y-2 mt-5">
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Tot din pachetul BAZĂ</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Grup privat WhatsApp</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Feedback video personalizat</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Suport 30 zile nelimitat</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Diplomă de absolvire</span>
+          </div>
+         </div><!-- Highlight Note -->
+         <div class="mt-4 p-2 rounded-lg" style="background-color: rgba(139, 38, 53, 0.1);"><span class="font-lato text-xs font-bold" style="color: #8B2635;">💬 Întrebări &amp; Răspunsuri live</span>
+         </div>
+        </div><!-- Footer Price -->
+        <div class="w-full flex items-center justify-center" style="background-color: #8B2635; padding: 4% 0;"><span id="proPrice" class="font-serif-display font-bold text-3xl sm:text-4xl text-white">350 RON</span>
+        </div><!-- Handle -->
+        <div class="w-full text-right pr-4 pb-2 pt-2"><span id="handle2" class="font-lato text-xs" style="color: #3A3A3A;">@monica.laminaregene</span>
+        </div>
+       </div>
+      </div><!-- SLIDE 3: PREMIUM -->
+      <div class="slide">
+       <div class="slide-container rounded-2xl overflow-hidden card-shadow" style="background-color: #F7F3F0;"><!-- Header Bar -->
+        <div class="w-full flex flex-col items-center justify-center" style="background-color: #C9A6A0; padding: 4% 0;">
+         <h2 class="font-lato font-bold text-lg sm:text-xl" style="color: #3A3A3A;">Curs PREMIUM</h2>
+         <p class="font-lato text-xs sm:text-sm" style="color: rgba(58, 58, 58, 0.7);">Experiența completă</p>
+        </div><!-- Card Central -->
+        <div class="mx-auto bg-white rounded-xl card-shadow" style="width: 85%; margin-top: 5%; margin-bottom: 5%; padding: 6% 5%;"><!-- Title -->
+         <div class="text-center mb-4">
+          <h1 class="font-serif-display font-bold text-2xl sm:text-3xl" style="color: #8B2635;">Laminare GENE</h1>
+          <p class="font-serif-display text-base sm:text-lg" style="color: #3A3A3A;">VIP Experience</p>
+         </div><!-- Decorative Line -->
+         <div class="flex justify-center my-4">
+          <div class="w-24 h-0.5" style="background-color: #8B2635;"></div>
+         </div><!-- Benefits List -->
+         <div class="space-y-2 mt-5">
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Tot din pachetul PRO</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">1:1 Video Call cu Monica</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Kit produse starter inclus</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Suport 60 zile extins</span>
+          </div>
+          <div class="flex items-start gap-2"><span style="color: #8B2635;">✓</span> <span class="font-lato text-sm" style="color: #3A3A3A;">Acces cursuri viitoare -50%</span>
+          </div>
+         </div><!-- VIP Note -->
+         <div class="mt-4 p-2 rounded-lg" style="background: linear-gradient(135deg, rgba(139, 38, 53, 0.15) 0%, rgba(212, 181, 176, 0.3) 100%);"><span class="font-lato text-xs font-bold" style="color: #8B2635;">👑 Locuri limitate: 5/lună</span>
+         </div>
+        </div><!-- Footer Price -->
+        <div class="w-full flex items-center justify-center" style="background-color: #8B2635; padding: 4% 0;"><span id="premiumPrice" class="font-serif-display font-bold text-3xl sm:text-4xl text-white">550 RON</span>
+        </div><!-- Handle -->
+        <div class="w-full text-right pr-4 pb-2 pt-2"><span id="handle3" class="font-lato text-xs" style="color: #3A3A3A;">@monica.laminaregene</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Navigation Dots -->
+    <div class="flex justify-center gap-2 mt-4"><button class="nav-dot w-2 h-2 rounded-full active" style="background-color: #8B2635;" data-slide="0"></button> <button class="nav-dot w-2 h-2 rounded-full" style="background-color: rgba(139, 38, 53, 0.3);" data-slide="1"></button> <button class="nav-dot w-2 h-2 rounded-full" style="background-color: rgba(139, 38, 53, 0.3);" data-slide="2"></button>
+    </div><!-- Slide Counter -->
+    <div class="text-center mt-3"><span class="font-lato text-sm" style="color: rgba(58, 58, 58, 0.6);"> <span id="currentSlide">1</span> / 3 </span>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    const defaultConfig = {
+      brand_handle: '@monica.laminaregene',
+      base_price: '150 RON',
+      pro_price: '350 RON',
+      premium_price: '550 RON',
+      primary_color: '#8B2635',
+      background_color: '#F7F3F0',
+      text_color: '#3A3A3A',
+      font_family: 'Lato',
+      font_size: 16
+    };
+    
+    let currentSlideIndex = 0;
+    const totalSlides = 3;
+    
+    const carouselWrapper = document.getElementById('carouselWrapper');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dots = document.querySelectorAll('.nav-dot');
+    const currentSlideEl = document.getElementById('currentSlide');
+    
+    // Download slide as PNG
+    async function downloadSlideAsPNG(slideIndex) {
+      const slides = document.querySelectorAll('.slide');
+      const slideElement = slides[slideIndex];
+      const slideContainer = slideElement.querySelector('.slide-container');
+      
+      if (!slideContainer) return;
+      
+      try {
+        const canvas = await html2canvas(slideContainer, {
+          backgroundColor: '#F7F3F0',
+          scale: 2,
+          useCORS: true,
+          allowTaint: true,
+          logging: false
+        });
+        
+        const link = document.createElement('a');
+        const slideNames = ['BAZA', 'PROFESIONAL', 'PREMIUM'];
+        link.href = canvas.toDataURL('image/png');
+        link.download = `Laminare_Gene_${slideNames[slideIndex]}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (err) {
+        console.error('Error downloading slide:', err);
+      }
+    }
+    
+    // Add right-click context menu
+    document.addEventListener('contextmenu', (e) => {
+      const slideContainer = e.target.closest('.slide-container');
+      if (slideContainer) {
+        e.preventDefault();
+        
+        // Find which slide was clicked
+        const slides = document.querySelectorAll('.slide-container');
+        let clickedSlideIndex = 0;
+        slides.forEach((slide, index) => {
+          if (slide === slideContainer) {
+            clickedSlideIndex = index;
+          }
+        });
+        
+        downloadSlideAsPNG(clickedSlideIndex);
+      }
+    }, false);
+    
+    function goToSlide(index) {
+      if (index < 0) index = 0;
+      if (index >= totalSlides) index = totalSlides - 1;
+      
+      currentSlideIndex = index;
+      carouselWrapper.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Update dots
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('active');
+          dot.style.backgroundColor = '#8B2635';
+          dot.style.width = '24px';
+        } else {
+          dot.classList.remove('active');
+          dot.style.backgroundColor = 'rgba(139, 38, 53, 0.3)';
+          dot.style.width = '8px';
+        }
+      });
+      
+      // Update counter
+      currentSlideEl.textContent = index + 1;
+      
+      // Update arrow visibility
+      prevBtn.style.opacity = index === 0 ? '0' : '1';
+      prevBtn.style.pointerEvents = index === 0 ? 'none' : 'auto';
+      nextBtn.style.opacity = index === totalSlides - 1 ? '0' : '1';
+      nextBtn.style.pointerEvents = index === totalSlides - 1 ? 'none' : 'auto';
+    }
+    
+    prevBtn.addEventListener('click', () => goToSlide(currentSlideIndex - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentSlideIndex + 1));
+    
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const slideIndex = parseInt(dot.dataset.slide);
+        goToSlide(slideIndex);
+      });
+    });
+    
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    carouselWrapper.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    carouselWrapper.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goToSlide(currentSlideIndex + 1);
+        } else {
+          goToSlide(currentSlideIndex - 1);
+        }
+      }
+    }, { passive: true });
+    
+    // Element SDK Integration
+    async function onConfigChange(config) {
+      const handle = config.brand_handle || defaultConfig.brand_handle;
+      const basePrice = config.base_price || defaultConfig.base_price;
+      const proPrice = config.pro_price || defaultConfig.pro_price;
+      const premiumPrice = config.premium_price || defaultConfig.premium_price;
+      
+      // Update handles
+      document.getElementById('handle1').textContent = handle;
+      document.getElementById('handle2').textContent = handle;
+      document.getElementById('handle3').textContent = handle;
+      
+      // Update prices
+      document.getElementById('basePrice').textContent = basePrice;
+      document.getElementById('proPrice').textContent = proPrice;
+      document.getElementById('premiumPrice').textContent = premiumPrice;
+    }
+    
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+    
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['brand_handle', config.brand_handle || defaultConfig.brand_handle],
+        ['base_price', config.base_price || defaultConfig.base_price],
+        ['pro_price', config.pro_price || defaultConfig.pro_price],
+        ['premium_price', config.premium_price || defaultConfig.premium_price]
+      ]);
+    }
+    
+    // Initialize SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+    
+    // Initialize first slide
+    goToSlide(0);
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c53d6fa349fbe72',t:'MTc2OTYzODQzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
