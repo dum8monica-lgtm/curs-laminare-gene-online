@@ -7,7 +7,7 @@
     <title>Curs Laminare Gene Online - Certificat & Acces Nelimitat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -18,13 +18,14 @@
         body {
             font-family: 'Lato', sans-serif;
             line-height: 1.6;
-            color: #3A3A3A;
+            color: #2D2D2D;
             background-color: #F7F3F0;
         }
 
         h1, h2, h3 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 900;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #2D2D2D;
         }
 
         .container {
@@ -35,20 +36,23 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #8B2635 0%, #6d1e2a 70%);
+            background: linear-gradient(135deg, #C5A059 0%, #A89F91 70%);
             color: white;
             padding: 80px 20px;
             text-align: center;
         }
 
         .hero h1 {
+            font-family: 'Playfair Display', serif;
             font-size: 2.8em;
             margin-bottom: 20px;
             line-height: 1.2;
-            font-weight: 900;
+            font-weight: 700;
+            color: white;
         }
 
         .hero p {
+            font-family: 'Lato', sans-serif;
             font-size: 1.3em;
             margin-bottom: 30px;
             font-weight: 400;
@@ -65,7 +69,7 @@
 
         .cta-button {
             display: inline-block;
-            background-color: #8B2635;
+            background-color: #C5A059;
             color: white;
             padding: 18px 45px;
             text-decoration: none;
@@ -75,34 +79,37 @@
             transition: transform 0.3s, box-shadow 0.3s;
             margin-top: 10px;
             border: 2px solid white;
+            font-family: 'Lato', sans-serif;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            background-color: #6d1e2a;
+            background-color: #A89F91;
         }
 
         /* Pricing Cards Section */
         .pricing-section {
             padding: 80px 20px;
-            background: linear-gradient(135deg, #F7F3F0 0%, #E8D5D0 100%);
+            background: #F7F3F0;
         }
 
         .pricing-section h2 {
+            font-family: 'Playfair Display', serif;
             font-size: 2.8em;
             text-align: center;
             margin-bottom: 20px;
-            color: #8B2635;
-            font-weight: 900;
+            color: #2D2D2D;
+            font-weight: 700;
         }
 
         .pricing-subtitle {
             text-align: center;
             font-size: 1.3em;
-            color: #3A3A3A;
+            color: #2D2D2D;
             margin-bottom: 60px;
             font-weight: 400;
+            font-family: 'Lato', sans-serif;
         }
 
         .pricing-grid {
@@ -117,21 +124,22 @@
             background: #FFFFFF;
             border-radius: 20px;
             padding: 40px 30px;
-            box-shadow: 0 10px 40px rgba(139, 38, 53, 0.15);
+            box-shadow: 0 10px 40px rgba(168, 159, 145, 0.15);
             position: relative;
             transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
             flex-direction: column;
+            border: 2px solid #A89F91;
         }
 
         .price-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 50px rgba(139, 38, 53, 0.25);
+            box-shadow: 0 15px 50px rgba(168, 159, 145, 0.25);
         }
 
         /* Badge pentru pachetul recomandat */
         .price-card.recommended {
-            border: 4px solid #8B2635;
+            border: 4px solid #C5A059;
             transform: scale(1.05);
         }
 
@@ -144,33 +152,36 @@
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
-            background: #8B2635;
+            background: #C5A059;
             color: white;
             padding: 10px 25px;
             border-radius: 30px;
-            font-weight: 900;
+            font-weight: 700;
             font-size: 0.9em;
-            box-shadow: 0 5px 15px rgba(139, 38, 53, 0.3);
+            box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+            font-family: 'Lato', sans-serif;
         }
 
         .price-card-header {
             text-align: center;
             padding-bottom: 25px;
-            border-bottom: 2px solid #E8D5D0;
+            border-bottom: 2px solid #A89F91;
             margin-bottom: 25px;
         }
 
         .price-card-title {
+            font-family: 'Playfair Display', serif;
             font-size: 1.8em;
-            color: #8B2635;
-            font-weight: 900;
+            color: #2D2D2D;
+            font-weight: 700;
             margin-bottom: 10px;
         }
 
         .price-card-subtitle {
+            font-family: 'Lato', sans-serif;
             font-size: 1em;
-            color: #3A3A3A;
-            opacity: 0.8;
+            color: #2D2D2D;
+            opacity: 0.7;
             font-weight: 400;
         }
 
@@ -181,18 +192,20 @@
 
         .price-old {
             font-size: 1.2em;
-            color: #3A3A3A;
+            color: #2D2D2D;
             opacity: 0.6;
             text-decoration: line-through;
             font-weight: 400;
             display: block;
             margin-bottom: 5px;
+            font-family: 'Lato', sans-serif;
         }
 
         .price-current {
+            font-family: 'Playfair Display', serif;
             font-size: 3em;
-            color: #8B2635;
-            font-weight: 900;
+            color: #C5A059;
+            font-weight: 700;
             display: block;
         }
 
@@ -203,13 +216,14 @@
 
         .price-savings {
             display: inline-block;
-            background: #8B2635;
+            background: #C5A059;
             color: white;
             padding: 8px 20px;
             border-radius: 20px;
             font-size: 0.9em;
             font-weight: 700;
             margin-top: 10px;
+            font-family: 'Lato', sans-serif;
         }
 
         .price-card-features {
@@ -225,24 +239,25 @@
             padding: 12px 0;
             padding-left: 30px;
             position: relative;
-            color: #3A3A3A;
+            color: #2D2D2D;
             font-size: 1em;
             line-height: 1.5;
+            font-family: 'Lato', sans-serif;
         }
 
         .price-card-features li:before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #8B2635;
+            color: #C5A059;
             font-weight: bold;
             font-size: 1.3em;
         }
 
         .price-card-features li.highlight {
             font-weight: 700;
-            color: #8B2635;
-            background: rgba(232, 213, 208, 0.3);
+            color: #C5A059;
+            background: rgba(197, 160, 89, 0.1);
             padding: 12px 12px 12px 30px;
             margin: 8px -12px;
             border-radius: 8px;
@@ -254,7 +269,7 @@
 
         .price-card-features li.not-included:before {
             content: "⚠";
-            color: #3A3A3A;
+            color: #A89F91;
         }
 
         .price-card-cta {
@@ -263,7 +278,7 @@
 
         .price-card-button {
             display: inline-block;
-            background: #8B2635;
+            background: #C5A059;
             color: white;
             padding: 16px 35px;
             border-radius: 50px;
@@ -271,41 +286,37 @@
             font-size: 1.1em;
             text-decoration: none;
             transition: all 0.3s;
-            border: 2px solid #8B2635;
+            border: 2px solid #C5A059;
+            font-family: 'Lato', sans-serif;
         }
 
         .price-card-button:hover {
             background: white;
-            color: #8B2635;
+            color: #C5A059;
             transform: scale(1.05);
         }
 
         .recommended .price-card-button {
-            background: linear-gradient(135deg, #8B2635 0%, #6d1e2a 100%);
+            background: linear-gradient(135deg, #C5A059 0%, #A89F91 100%);
             font-size: 1.2em;
             padding: 18px 40px;
-            box-shadow: 0 5px 20px rgba(139, 38, 53, 0.4);
+            box-shadow: 0 5px 20px rgba(197, 160, 89, 0.4);
         }
 
         .price-card-footer {
             text-align: center;
             margin-top: 20px;
             font-size: 0.9em;
-            color: #3A3A3A;
+            color: #2D2D2D;
             opacity: 0.7;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
         }
 
         /* Premium VIP styling */
         .price-card.vip {
             background: linear-gradient(135deg, #FFFFFF 0%, #F7F3F0 100%);
-            border: 3px solid #8B2635;
-        }
-
-        .vip .price-card-title {
-            background: linear-gradient(135deg, #8B2635, #6d1e2a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            border: 3px solid #C5A059;
         }
 
         /* Sections */
@@ -318,11 +329,12 @@
         }
 
         h2 {
+            font-family: 'Playfair Display', serif;
             font-size: 2.5em;
             text-align: center;
             margin-bottom: 50px;
-            color: #8B2635;
-            font-weight: 900;
+            color: #2D2D2D;
+            font-weight: 700;
         }
 
         /* Features Grid */
@@ -334,11 +346,12 @@
         }
 
         .feature-card {
-            background: #E8D5D0;
+            background: #F7F3F0;
             padding: 35px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(139, 38, 53, 0.1);
+            box-shadow: 0 5px 20px rgba(168, 159, 145, 0.1);
             transition: transform 0.3s;
+            border: 2px solid #A89F91;
         }
 
         .feature-card:hover {
@@ -346,10 +359,11 @@
         }
 
         .feature-card h3 {
-            color: #8B2635;
+            font-family: 'Playfair Display', serif;
+            color: #2D2D2D;
             margin-bottom: 15px;
             font-size: 1.5em;
-            font-weight: 900;
+            font-weight: 700;
         }
 
         .feature-card ul {
@@ -360,20 +374,21 @@
             padding: 8px 0;
             padding-left: 25px;
             position: relative;
-            color: #3A3A3A;
+            color: #2D2D2D;
+            font-family: 'Lato', sans-serif;
         }
 
         .feature-card ul li:before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #8B2635;
+            color: #C5A059;
             font-weight: bold;
         }
 
         /* Benefits Section */
         .benefits {
-            background: linear-gradient(135deg, #8B2635 0%, #6d1e2a 100%);
+            background: linear-gradient(135deg, #C5A059 0%, #A89F91 100%);
             color: white;
         }
 
@@ -397,13 +412,18 @@
         .benefit-icon {
             font-size: 3em;
             margin-bottom: 15px;
-            color: #E8D5D0;
+            color: #F7F3F0;
         }
 
         .benefit-item h3 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.3em;
             margin-bottom: 10px;
-            font-weight: 700;
+            font-weight: 600;
+        }
+
+        .benefit-item p {
+            font-family: 'Lato', sans-serif;
         }
 
         /* Course Modules */
@@ -413,22 +433,24 @@
         }
 
         .module {
-            background: #E8D5D0;
+            background: #F7F3F0;
             padding: 25px;
             margin-bottom: 15px;
             border-radius: 10px;
-            border-left: 5px solid #8B2635;
-            box-shadow: 0 3px 10px rgba(139, 38, 53, 0.1);
+            border-left: 5px solid #C5A059;
+            box-shadow: 0 3px 10px rgba(168, 159, 145, 0.1);
         }
 
         .module h3 {
-            color: #8B2635;
+            font-family: 'Playfair Display', serif;
+            color: #2D2D2D;
             font-size: 1.3em;
-            font-weight: 900;
+            font-weight: 700;
         }
 
         .module p {
-            color: #3A3A3A;
+            font-family: 'Lato', sans-serif;
+            color: #2D2D2D;
             margin-top: 10px;
         }
 
@@ -446,14 +468,19 @@
             padding: 30px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(139, 38, 53, 0.1);
-            border: 2px solid #E8D5D0;
+            box-shadow: 0 5px 15px rgba(168, 159, 145, 0.1);
+            border: 2px solid #A89F91;
         }
 
         .target-card h3 {
-            color: #8B2635;
+            font-family: 'Playfair Display', serif;
+            color: #2D2D2D;
             margin-bottom: 15px;
-            font-weight: 900;
+            font-weight: 700;
+        }
+
+        .target-card p {
+            font-family: 'Lato', sans-serif;
         }
 
         /* FAQ Section */
@@ -467,54 +494,59 @@
             padding: 25px;
             margin-bottom: 15px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(139, 38, 53, 0.1);
-            border-left: 4px solid #8B2635;
+            box-shadow: 0 3px 10px rgba(168, 159, 145, 0.1);
+            border-left: 4px solid #C5A059;
         }
 
         .faq-item h3 {
-            color: #8B2635;
+            font-family: 'Playfair Display', serif;
+            color: #2D2D2D;
             margin-bottom: 10px;
             font-size: 1.2em;
-            font-weight: 700;
+            font-weight: 600;
         }
 
         .faq-item p {
-            color: #3A3A3A;
+            font-family: 'Lato', sans-serif;
+            color: #2D2D2D;
         }
 
         /* CTA Section */
         .final-cta {
-            background: linear-gradient(135deg, #8B2635 0%, #6d1e2a 100%);
+            background: linear-gradient(135deg, #C5A059 0%, #A89F91 100%);
             color: white;
             text-align: center;
             padding: 80px 20px;
         }
 
         .final-cta h2 {
+            font-family: 'Playfair Display', serif;
             color: white;
             margin-bottom: 20px;
         }
 
         .final-cta p {
+            font-family: 'Lato', sans-serif;
             font-size: 1.2em;
             margin-bottom: 30px;
         }
 
         .final-cta .cta-button {
             background-color: white;
-            color: #8B2635;
+            color: #C5A059;
             font-size: 1.3em;
             padding: 20px 50px;
-            border: none;
+            border: 2px solid white;
         }
 
         .final-cta .cta-button:hover {
-            background-color: #E8D5D0;
+            background-color: #F7F3F0;
+            color: #2D2D2D;
         }
 
         /* About Trainer Section */
         .about-trainer {
-            background: linear-gradient(135deg, #E8D5D0 0%, #f0e5e1 100%);
+            background: #F7F3F0;
         }
 
         .trainer-content {
@@ -523,40 +555,44 @@
             background: white;
             padding: 50px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(139, 38, 53, 0.1);
+            box-shadow: 0 10px 30px rgba(168, 159, 145, 0.1);
             display: grid;
             grid-template-columns: 300px 1fr;
             gap: 40px;
             align-items: center;
+            border: 2px solid #A89F91;
         }
 
         .trainer-content img {
             width: 100%;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(139, 38, 53, 0.15);
+            box-shadow: 0 5px 20px rgba(168, 159, 145, 0.15);
         }
 
         .trainer-content h3 {
-            color: #8B2635;
+            font-family: 'Playfair Display', serif;
+            color: #2D2D2D;
             font-size: 1.8em;
             margin-bottom: 20px;
-            font-weight: 900;
+            font-weight: 700;
         }
 
         .trainer-content p {
+            font-family: 'Lato', sans-serif;
             font-size: 1.05em;
             line-height: 1.8;
             margin-bottom: 15px;
-            color: #3A3A3A;
+            color: #2D2D2D;
         }
 
         /* What You'll Do Section */
         .what-youll-do {
-            background: linear-gradient(135deg, #8B2635 0%, #6d1e2a 100%);
+            background: linear-gradient(135deg, #C5A059 0%, #A89F91 100%);
             color: white;
         }
 
         .what-youll-do h2 {
+            font-family: 'Playfair Display', serif;
             color: white;
         }
 
@@ -577,10 +613,11 @@
         .what-item .icon {
             font-size: 3em;
             margin-bottom: 15px;
-            color: #E8D5D0;
+            color: #F7F3F0;
         }
 
         .what-item p {
+            font-family: 'Lato', sans-serif;
             font-size: 1.1em;
             line-height: 1.6;
         }
@@ -589,10 +626,11 @@
         .benefits-box {
             max-width: 800px;
             margin: 0 auto;
-            background: #E8D5D0;
+            background: #F7F3F0;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(139, 38, 53, 0.1);
+            box-shadow: 0 10px 30px rgba(168, 159, 145, 0.1);
+            border: 2px solid #A89F91;
         }
 
         .benefits-box-item {
@@ -603,34 +641,39 @@
         }
 
         .benefits-box-item span {
-            color: #8B2635;
+            color: #C5A059;
             font-size: 1.5em;
-            font-weight: 900;
+            font-weight: 700;
         }
 
         .benefits-box-item p {
+            font-family: 'Lato', sans-serif;
             font-size: 1.1em;
             line-height: 1.6;
             margin: 0;
-            color: #3A3A3A;
+            color: #2D2D2D;
         }
 
         /* Footer */
         footer {
-            background-color: #1A1A1A;
+            background-color: #2D2D2D;
             color: white;
             text-align: center;
             padding: 30px 20px;
         }
 
+        footer p {
+            font-family: 'Lato', sans-serif;
+        }
+
         footer a {
-            color: #E8D5D0;
+            color: #C5A059;
             text-decoration: none;
             font-weight: 700;
         }
 
         footer a:hover {
-            color: #8B2635;
+            color: #A89F91;
         }
 
         /* Responsive */
@@ -719,7 +762,7 @@
                     </div>
                     
                     <div class="price-card-cta">
-                       <a href="https://buy.stripe.com/test_cNi3cxaiYdPccgQeVTd3i00" class="price-card-button">ALEGE BAZĂ</a>
+                        <a href="https://buy.stripe.com/LINKUL_TĂU_BAZĂ" class="price-card-button">ALEGE BAZĂ</a>
                     </div>
                     
                     <div class="price-card-footer">
@@ -745,9 +788,9 @@
                     <div class="price-card-features">
                         <ul>
                             <li>Video HD - Acces Nelimitat</li>
-                            <li>Material video complet</li>
+                            <li>3 ore material video complet</li>
                             <li>PDF + Checklist complet descărcabil</li>
-                            <li class="highlight">Mentorat 1:1 (1 sesiune × 60 min)</li>
+                            <li class="highlight">Mentorat 1:1 (2 sesiuni × 60 min)</li>
                             <li class="highlight">Grup WhatsApp suport 30 zile</li>
                             <li>10 Template-uri Instagram pentru promovare</li>
                             <li>Certificat digital personalizat</li>
@@ -756,7 +799,7 @@
                     </div>
                     
                     <div class="price-card-cta">
-                        <a href="https://buy.stripe.com/test_eVq6oJ8aQdPc0y86pnd3i01" class="price-card-button">ALEGE PROFESIONAL</a>
+                        <a href="https://buy.stripe.com/LINKUL_TĂU_PROFESIONAL" class="price-card-button">ALEGE PROFESIONAL</a>
                     </div>
                     
                     <div class="price-card-footer">
@@ -768,41 +811,42 @@
                 <div class="price-card vip">
                     <div class="price-card-header">
                         <h3 class="price-card-title">Curs VIP</h3>
-                        <p class="price-card-subtitle">Experiență completă + Business</p>
+                        <p class="price-card-subtitle">Experiență completă + Suport Premium</p>
                     </div>
                     
                     <div class="price-card-price">
                         <span class="price-old">650 RON</span>
                         <span class="price-current">500<span class="price-currency"> RON</span></span>
-                        <span class="price-savings">🎁 Bonus: Feedback Personalizat pe Primele 3 Cliente </span>
+                        <span class="price-savings">🎁 Te ghidez LIVE</span>
                     </div>
                     
                     <div class="price-card-features">
                         <ul>
-                            <li>Mentorat LIVE - Primele 2 proceduri ghidate (video call)</li>
+                            <li class="highlight">Primele 2 proceduri ghidate LIVE (video call)</li>
                             <li>Înregistrare accesibilă nelimitat</li>
-                            <li class="highlight">Mentorat 1:1 (3 sesiuni × 60 min)</li>
+                            <li class="highlight">Mentorat 1:1 Nelimitat (30 zile)</li>
                             <li class="highlight">Suport WhatsApp Direct cu mine</li>
-                            <li>20 Template-uri Instagram + Ghid Marketing</li>
+                            <li>50 Template-uri Instagram + Ghid Marketing</li>
                             <li>Certificat personalizat premium</li>
-                            <li class="highlight">Feedback Personalizat pe Primele 3 Cliente</li>
-                            <li>Cum să-ți stabilești prețurile</li>
+                            <li class="highlight">Feedback Personalizat Video (prima lucrare)</li>
+                            <li>Sesiune Practică LIVE Extra (60 min)</li>
+                            <li>Strategii de promovare pe Instagram</li>
                             <li>Prioritate la viitoarele cursuri</li>
                         </ul>
                     </div>
                     
                     <div class="price-card-cta">
-                        <a href="https://buy.stripe.com/test_3cIcN74YE6mK5Ss4hfd3i02" class="price-card-button">ALEGE VIP</a>
+                        <a href="https://buy.stripe.com/LINKUL_TĂU_VIP" class="price-card-button">ALEGE VIP</a>
                     </div>
                     
                     <div class="price-card-footer">
-                        Pentru cei care vor totul: skill + business
+                        Pentru cei care vor suport complet și ghidare personalizată
                     </div>
                 </div>
 
             </div>
 
-            <p style="text-align: center; margin-top: 50px; font-size: 1.2em; color: #8B2635; font-weight: 700;">
+            <p style="text-align: center; margin-top: 50px; font-size: 1.2em; color: #C5A059; font-weight: 700; font-family: 'Lato', sans-serif;">
                 🎯 70% din cursante aleg pachetul PROFESIONAL!
             </p>
         </div>
@@ -813,10 +857,10 @@
         <div class="container">
             <h2>Ce Este Laminarea Genelor?</h2>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p style="font-size: 1.2em; line-height: 1.8; margin-bottom: 20px;">
+                <p style="font-size: 1.2em; line-height: 1.8; margin-bottom: 20px; font-family: 'Lato', sans-serif;">
                     Laminarea genelor este o procedură non-invazivă care ridică, curbează, hrănește și intensifică genele naturale, oferind un look natural, elegant și îngrijit, fără extensii.
                 </p>
-                <p style="font-size: 1.1em; line-height: 1.8; color: #3A3A3A;">
+                <p style="font-size: 1.1em; line-height: 1.8; color: #2D2D2D; font-family: 'Lato', sans-serif; font-weight: 300;">
                     Este unul dintre cele mai cerute servicii din saloane, datorită rezultatelor vizibile și întreținerii minime.
                 </p>
             </div>
@@ -1015,7 +1059,7 @@
             <div class="faq-container">
                 <div class="faq-item">
                     <h3>Care este diferența între pachete?</h3>
-                    <p>Pachetul BAZĂ este pentru învățare independentă. Pachetul PROFESIONAL include mentorat 1:1 și suport 30 zile. Pachetul VIP oferă demonstrație LIVE, mentorat nelimitat și consultanță business.</p>
+                    <p>Pachetul BAZĂ este pentru învățare independentă. Pachetul PROFESIONAL include mentorat 1:1 și suport 30 zile. Pachetul VIP oferă ghidare LIVE pentru primele 2 proceduri, mentorat nelimitat și feedback personalizat video.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Pot să încep fără experiență?</h3>
@@ -1031,7 +1075,7 @@
                 </div>
                 <div class="faq-item">
                     <h3>Pot pune întrebări în timpul cursului?</h3>
-                    <p>Pachetul PROFESIONAL include suport WhatsApp 30 zile + 2 sesiuni mentorat. Pachetul VIP include suport nelimitat 30 zile + consultanță business.</p>
+                    <p>Pachetul PROFESIONAL include suport WhatsApp 30 zile + 2 sesiuni mentorat. Pachetul VIP include suport nelimitat 30 zile + ghidare LIVE pentru primele 2 proceduri.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Ce echipament îmi trebuie?</h3>
@@ -1039,7 +1083,7 @@
                 </div>
                 <div class="faq-item">
                     <h3>Care pachet îmi recomandați?</h3>
-                    <p>70% din cursante aleg pachetul PROFESIONAL pentru raportul calitate-preț excelent. Dacă vrei și suport business, alege VIP.</p>
+                    <p>70% din cursante aleg pachetul PROFESIONAL pentru raportul calitate-preț excelent. Dacă vrei suport personalizat complet și ghidare LIVE, alege VIP.</p>
                 </div>
             </div>
         </div>
@@ -1057,16 +1101,19 @@
         </div>
     </section>
 
-   html<!-- Footer -->
-<footer>
-    <div class="container">
-        <p style="font-size: 1.2em; margin-bottom: 15px;">
-            📱 Instagram: <a href="https://instagram.com/monica.laminaregene" target="_blank">@monica.laminare.gene</a>
-        </p>
-        <p style="font-size: 1.2em; margin-bottom: 15px;">
-            ✉️ Contact: <a href="mailto:monica.laminare.gene@gmail.com">monica.laminare.gene@gmail.com</a>
-        </p>
-        <p>&copy; 2025 Curs Laminare Gene Online. Toate drepturile rezervate.</p>
-        <p>Curs cosmetică online | Training laminare gene România</p>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.2em; margin-bottom: 15px;">
+                📱 Instagram: <a href="https://instagram.com/monica.laminaregene" target="_blank">@monica.laminare.gene</a>
+            </p>
+            <p style="font-size: 1.2em; margin-bottom: 15px;">
+                ✉️ Contact: <a href="mailto:monica.laminare.gene@gmail.com">monica.laminare.gene@gmail.com</a>
+            </p>
+            <p>&copy; 2025 Curs Laminare Gene Online. Toate drepturile rezervate.</p>
+            <p>Curs cosmetică online | Training laminare gene România</p>
+        </div>
+    </footer>
+
+</body>
+</html>
