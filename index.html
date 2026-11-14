@@ -169,6 +169,9 @@
         }
         .module h3 { font-size: 1.3em; }
         .module p { margin-top: 10px; }
+        .module-items { list-style: none; margin-top: 10px; }
+        .module-items li { position: relative; padding: 5px 0 5px 22px; }
+        .module-items li:before { content: "✓"; position: absolute; left: 0; color: #1E3A5F; font-weight: bold; }
 
         .target-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
         .target-card {
@@ -390,31 +393,49 @@
             <div class="modules-list">
                 <div class="module">
                     <h3>Modul 1: Introducere</h3>
-                    <p>Cum să parcurgi structurat cursul • Ce vei învăța în acest curs</p>
+                    <ul class="module-items">
+                        <li>Cum să parcurgi structurat cursul</li>
+                        <li>Ce vei învăța în acest curs</li>
+                    </ul>
                 </div>
                 <div class="module">
                     <h3>Modul 2: Baza oricărei proceduri - teoria</h3>
-                    <p>Anatomia genelor și laminarea • Igiena</p>
+                    <ul class="module-items">
+                        <li>Anatomia genelor și laminarea</li>
+                        <li>Igiena</li>
+                    </ul>
                 </div>
                 <div class="module">
                     <h3>Modul 3: Practica</h3>
-                    <p>Curățarea corectă a genelor (video HD) • Verificarea genelor • Patch - aplicare protecție ochi • Ridicarea genelor pe pad • Loțiuni - cum le aplicăm • Vopsirea genelor și îndepărtarea vopselei</p>
+                    <ul class="module-items">
+                        <li>Curățarea corectă a genelor (video HD)</li>
+                        <li>Verificarea genelor</li>
+                        <li>Patch - aplicare protecție ochi</li>
+                        <li>Ridicarea genelor pe pad</li>
+                        <li>Loțiuni - cum le aplicăm</li>
+                        <li>Vopsirea genelor și îndepărtarea vopselei</li>
+                    </ul>
                 </div>
                 <div class="module">
                     <h3>Modul 4: Rezultat final</h3>
-                    <p>Îndepărtare eyepatches • Finalizarea procedurii</p>
+                    <ul class="module-items">
+                        <li>Îndepărtare eyepatches</li>
+                        <li>Finalizarea procedurii</li>
+                    </ul>
                 </div>
                 <div class="module">
                     <h3>PDF-uri descărcabile incluse:</h3>
-                    <p>✅ Laminarea genelor: secrete și tipsuri pentru rezultat perfect<br>
-                    ✅ Checklist – Îngrijirea post-procedură<br>
-                    ✅ Checklist – Pregătirea spațiului<br>
-                    ✅ Checklist – Procedura<br>
-                    ✅ Fișă de lucru – Laminare gene<br>
-                    ✅ Instrucțiuni post laminare<br>
-                    ✅ Manual laminare gene<br>
-                    ✅ Mini ghid de marketing pentru tehnicieni<br>
-                    ✅ Model politici salon</p>
+                    <ul class="module-items">
+                        <li>Laminarea genelor: secrete și tipsuri pentru rezultat perfect</li>
+                        <li>Checklist – Îngrijirea post-procedură</li>
+                        <li>Checklist – Pregătirea spațiului</li>
+                        <li>Checklist – Procedura</li>
+                        <li>Fișă de lucru – Laminare gene</li>
+                        <li>Instrucțiuni post laminare</li>
+                        <li>Manual laminare gene</li>
+                        <li>Mini ghid de marketing pentru tehnicieni</li>
+                        <li>Model politici salon</li>
+                    </ul>
                 </div>
             </div>
         </div>
